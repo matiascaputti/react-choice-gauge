@@ -1,7 +1,6 @@
 # React Drag and Drop example
-=========
 
-<p align="center" style="width: 600px">
+<p align="center">
   <img src="http://i.imgur.com/mEmOD52.gif">
 </p>
 

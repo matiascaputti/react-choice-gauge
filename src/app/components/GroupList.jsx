@@ -4,7 +4,8 @@ import Group from './Group.jsx';
 const style = {
   height: '100%',
   backgroundColor: '#DDD',
-  padding: '20px'
+  padding: '10px',
+  overflow: 'scroll'
 };
 
 class GroupList extends React.Component {

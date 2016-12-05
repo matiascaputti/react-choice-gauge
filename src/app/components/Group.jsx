@@ -4,12 +4,8 @@ import { DropTarget } from 'react-dnd';
 import { reject } from 'lodash';
 
 const style = {
-  color: '#FFF',
-  backgroundColor: '#777',
-  height: '12rem',
-  width: '10rem',
-  margin: '1.5rem',
-  padding: '1rem',
+  width: '25rem',
+  margin: '1rem',
   fontSize: '1rem',
   lineHeight: 'normal',
   float: 'left'
@@ -56,18 +52,21 @@ class Group extends React.Component {
     if (this.state.students.length) {
       return this.state.students.map(student => {
         return (
-          <p
-            key={student.id}
-            style={{fontWeight: '900'}}
-          >
-            {student.name} ({student.id})
-            <span
-              style={{color: '#d9534f', fontSize: 20, fontWeight: '900', marginLeft: '10px', cursor: 'pointer'}}
-              onClick={(event) => this.removeStudent(student.id)}
+          <div>
+            <div
+              className="tag is-success is-medium"
+              style={{ margin: 5 }}
+              key={student.id}
             >
-              x
-            </span>
-          </p>
+              <p>
+                <b>{student.name} ({student.id})</b>
+              </p>
+              <button
+                className="delete"
+                onClick={(event) => this.removeStudent(student.id)}
+              ></button>
+            </div>
+          </div>
         );
       });
     }
@@ -99,10 +98,24 @@ class Group extends React.Component {
     }
 
     return connectDropTarget(
-      <div style={{ ...style, backgroundColor }}>
-        <h3 style={{marginTop: 0, textAlign: 'center'}}>group {id}</h3>
-
-        {this.groupStudents()}
+      <div className={'message'} style={{ ...style }}>
+        <div
+          style={{marginTop: 0, textAlign: 'center'}}
+          className={'message-header'}
+        >
+          <p
+            style={{color: '#FFF', padding: '5px'}}
+            className={'title danger'}
+          >
+            {`group ${id}`.toUpperCase()}
+          </p>
+        </div>
+        <div
+          style={{height: '14rem'}}
+          className="message-body"
+        >
+          {this.groupStudents()}
+        </div>
       </div>
     );
   }

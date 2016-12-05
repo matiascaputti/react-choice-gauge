@@ -2,12 +2,14 @@ import React from 'react';
 import { DragSource } from 'react-dnd';
 
 const style = {
-  border: '1px dashed gray',
   padding: '0.2rem 0.4rem',
-  marginBottom: '.5rem',
-  backgroundColor: 'white',
+  marginBottom: '.8rem',
   cursor: 'move',
-  paddingLeft: '10px'
+  padding: '10px'
+};
+
+const img = {
+  borderRadius: '50%'
 };
 
 const Types = {
@@ -58,8 +60,23 @@ class Student extends React.Component {
     const opacity = isDragging ? 0.4 : 1;
 
     return connectDragSource(
-      <div style={{ ...style, opacity }}>
-        <p style={{margin: 5}}>{name} ({id})</p>
+      <div className="box" style={style}>
+        <article className="media">
+          <div className="media-left">
+            <figure className="image is-45x45">
+              <img style={img} src="http://placehold.it/45x45" alt="Image" />
+            </figure>
+          </div>
+          <div className="media-content">
+            <div className="content">
+              <p>
+                <strong>{name} ({id})</strong>
+                <br />
+                <small>@{name} {id}{id}{id}{id}{id}{id}{id}{id}</small>
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
     );
   }

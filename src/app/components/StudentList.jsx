@@ -2,7 +2,7 @@ import React from 'react';
 import Student from './Student.jsx';
 
 const style = {
-  width: '10rem',
+  width: '25rem',
   height: '100%',
   backgroundColor: '#EEE',
   float: 'left',
@@ -14,6 +14,8 @@ class StudentList extends React.Component {
   render() {
     return (
       <div style={style}>
+        <p className="title">Unassigned students</p>
+
         <Student id={1} name={'John Doe'} />
         <Student id={2} name={'Peter Crawn'} />
         <Student id={3} name={'Chris Rider'} />

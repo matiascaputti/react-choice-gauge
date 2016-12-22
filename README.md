@@ -1,7 +1,7 @@
-# React Drag and Drop example
+# React Choice Gauge
 
 <p align="center">
-  <img src="http://i.imgur.com/mEmOD52.gif">
+  <img src="http://i.imgur.com/XXXXXX.gif">
 </p>
 
 ## Installation
@@ -27,7 +27,3 @@ npm run build
 Builds the app for production to the `dist` folder.
 
 The build is minified.
-
-=========
-
-_This example was made using [React DnD](https://github.com/gaearon/react-dnd/blob/master/README.md)._

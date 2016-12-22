@@ -1,0 +1,112 @@
+.app-container {
+  height: 100%;
+}
+
+.header {
+  background: rgb(0,173,141); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(0,173,141,1) 0%, rgba(0,209,178,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0,173,141,1) 0%,rgba(0,209,178,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,173,141,1) 0%,rgba(0,209,178,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ad8d', endColorstr='#00d1b2',GradientType=1 ); /* IE6-9 */
+  padding: 20px;
+}
+
+.header .logo {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.header .title,
+.header .subtitle,
+.header strong {
+  color: #FFF;
+}
+
+.content {
+  height: calc(100vh - 105px - 52px);
+  width: 400px;
+  margin: 25px auto 0;
+}
+
+.box {
+  overflow: hidden;
+}
+
+.box .question {
+  text-align: center;
+  font-weight: 900;
+}
+
+.box .options-container {
+  margin-bottom: 30px;
+}
+
+.box .option {
+  font-size: 13px;
+}
+
+.box .is-chosen {
+  background-color: #999;
+  border-width: 0;
+  color: white;
+}
+
+.box .progress {
+  margin: 0 0 -25px -22px;
+  width: calc(100% + 44px)
+}
+
+.box-buttons .fa-chevron-right {
+  font-size: 15px;
+  vertical-align: middle;
+  margin-left: -6px;
+}
+
+.gauge {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  top: -5px;
+  padding: 0;
+  margin: 20px auto 0;
+}
+
+.gauge-el {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.gauge-text {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.full {
+  width: 100%;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 10px 20px 20px;
+  background-color: #3F3B51;
+}
+
+.footer img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.powered-by {
+  color: #FFF;
+  font-size: 12px;
+  margin-right: 4px;
+}

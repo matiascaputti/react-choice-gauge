@@ -1,15 +1,14 @@
 import React from 'react';
 import { render } from 'react-dom';
-import DragContainer from './components/DragContainer.jsx';
+var isMobile = require('./utils/isMobile');
+import App from './components/App.jsx';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <DragContainer />
-      </div>
-    );
-  }
+window.addEventListener('beforeunload', function() {
+  window.scrollTo(0, 0);
+}, false);
+
+if (isMobile()) {
+  React.initializeTouchEvents(true);
 }
 
 render(

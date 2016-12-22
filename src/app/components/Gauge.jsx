@@ -69,7 +69,7 @@ class Gauge extends React.Component {
         <hr />
 
         <div className="box-buttons control is-grouped">
-          <p className="control center">
+          <p className="control center" onClick={this.handleClick}>
             <a className="button is-medium">
               <span>Share</span>
               <span className="icon">
@@ -77,7 +77,7 @@ class Gauge extends React.Component {
               </span>
             </a>
           </p>
-          <p className="control center">
+          <p className="control center" onClick={this.handleClick}>
             <a className="button is-medium">
               <span>Tweet</span>
               <span className="icon">
@@ -85,7 +85,7 @@ class Gauge extends React.Component {
               </span>
             </a>
           </p>
-          <p className="control center">
+          <p className="control center" onClick={this.handleClick}>
             <a className="button is-primary is-medium">
               <span>Apply now</span>
               <span className="icon">

@@ -21,7 +21,7 @@ class App extends React.Component {
         </section>
 
         <section className="content">
-          {/* <Gauge
+          <Gauge
             value={100}
             size={30}
             radius={150}
@@ -29,7 +29,7 @@ class App extends React.Component {
             arrow={{height: 110, width: 12, color: "#515151"}}
             legend={['PY1', 'PY2', 'PY3', 'PY4', 'PY5', 'PY6']}
             label="15%"
-          /> */}
+          />
 
           <Question />
         </section>

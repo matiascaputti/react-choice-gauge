@@ -1,7 +1,7 @@
 # React Choice Gauge
 
 <p align="center">
-  <img src="http://i.imgur.com/XXXXXX.gif">
+  <img src="http://i.imgur.com/lLQE3TV.png">
 </p>
 
 ## Installation
